@@ -139,4 +139,12 @@ view: liquor_info {
     type: count
     drill_fields: [category_name, vendor_name, store_name]
   }
+
+  measure: total_bottles_sold_last_year {
+    type: sum
+    sql: ${bottles_sold} ;;
+    filters: [date_year: "1 year ago"]
+    value_format_name: decimal_0
+    label: "Bottles Sold (Prior Year)"
+  }
 }
