@@ -1,1 +1,0 @@
-Hello from GCP! Yutaro's test file.
